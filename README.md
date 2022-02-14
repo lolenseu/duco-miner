@@ -1,2 +1,2 @@
 # DucoMiner
-A Software for Mining Duino Coin
+Software for Mining Duino Coin
