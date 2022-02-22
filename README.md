@@ -13,8 +13,10 @@ This mining Software is good for:
 ![Screenshot_2022-02-23_03-47-21](https://user-images.githubusercontent.com/98665691/155208281-76ad8ae4-8283-4b40-ac5a-63b6edcd72df.png)
 
 2. Mining on old Smart Phone with Root/Termux App Installed.
-3. Mining on Routers with OpenWRT Frimware Installed.
-4. Mining on ARM CPUs like Raspberry Pi, Orange Pi and Android TVs with Root/Termux App Installed.
+![Screenshot_2022-02-23-02-18-18-891_com termux](https://user-images.githubusercontent.com/98665691/155209488-6c9ab516-6121-49ce-b396-9b3b9cd991c4.jpg)
+
+4. Mining on Routers with OpenWRT Frimware Installed.
+5. Mining on ARM CPUs like Raspberry Pi, Orange Pi and Android TVs with Root/Termux App Installed.
 
 This Duino Miner works as a PC Version of the Official Duino Miner.
 
