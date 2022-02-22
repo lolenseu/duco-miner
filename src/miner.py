@@ -74,6 +74,7 @@ with open("src/userinfo") as userinfo:
                             break
                         elif feedback == "BAD":
                             print("[", datetime.today(), "]", "Share", result, "Difficulty", difficulty, "Hashrate", int(hashrate/1000), "kH/s", "(Rejected!)")
+                            break
 
         except Exception as e:
             print("")
@@ -82,3 +83,5 @@ with open("src/userinfo") as userinfo:
             getserverip()
             time.sleep(3)
             os.execl(sys.executable, sys.executable, *sys.argv)
+else:
+    exit()
