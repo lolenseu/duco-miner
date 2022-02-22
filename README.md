@@ -31,3 +31,6 @@ This Duino Miner works as a PC Version of the Official Duino Miner.
 This Mining Software is optional if you mining without ESP32, ESP8266 and AVR (Arduino-UNOs/NANOs), You can use the Official Duino Miner on https://github.com/revoxhere/duino-coin.
 
 We recommend to mine at least 5 to 4 Devices on this software because it can take effect on KOLKA System on mining duino coin with 20% percent cut down on profit every workers or core/thrend of cpu and make sure you have low hashrate below 100kh/s for better and efficient mining. Learn more on https://duco.sytes.net/fixes.html#pc
+
+
+Credits to https://github.com/alberiolima/MineCryptoOnWifiRouter
