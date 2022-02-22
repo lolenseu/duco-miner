@@ -1,5 +1,6 @@
 #!/bin/sh
 cd
+rm -rf ducominer
 rm -rf DucoMiner
 sudo apt update && sudo apt upgrade -y
 sudo apt install python3 python3-pip git
