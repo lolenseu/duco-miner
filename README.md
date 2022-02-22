@@ -10,6 +10,8 @@ chmod +x update.sh && ./update.sh
 This mining Software is good for:
 
 1. Mining on old Pc and Laptop.
+![Screenshot_2022-02-23_03-47-21](https://user-images.githubusercontent.com/98665691/155208281-76ad8ae4-8283-4b40-ac5a-63b6edcd72df.png)
+
 2. Mining on old Smart Phone with Root/Termux App Installed.
 3. Mining on Routers with OpenWRT Frimware Installed.
 4. Mining on ARM CPUs like Raspberry Pi, Orange Pi and Android TVs with Root/Termux App Installed.
