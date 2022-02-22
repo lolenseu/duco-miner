@@ -1,6 +1,14 @@
 # DucoMiner
 Lightweight Software for Mining Duco (DuinoCoin). This miner works for one core cpu and energy efficient for lightweight computers and devices.
 
+Fixed:
+-Username loop.
+-Connection Error.
+
+Update:
+-Updater File.
+-Username Settings/userinfo.
+
 To use the ducominer
 chmod +x start.sh && ./start.sh
 
