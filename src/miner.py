@@ -83,5 +83,3 @@ with open("src/userinfo") as userinfo:
             getserverip()
             time.sleep(3)
             os.execl(sys.executable, sys.executable, *sys.argv)
-else:
-    exit()
