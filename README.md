@@ -32,8 +32,10 @@ This Mining Software is optional if you mining without ESP32, ESP8266 and AVR (A
 
 We recommend to mine at least 5 to 4 Devices on this software because it can take effect on KOLKA System on mining duino coin with 20% percent cut down on profit every workers or core/thrend of cpu and make sure you have low hashrate below 100kh/s for better and efficient mining. Learn more on https://duco.sytes.net/fixes.html#pc
 
+# Assets
 
 The official code miner.py own by alberiolima on https://github.com/alberiolima/MineCryptoOnWifiRouter
+
 Modified by lolenseu on https://github.com/lolenseu/DucoMiner
 
 Credits to https://github.com/alberiolima/MineCryptoOnWifiRouter
