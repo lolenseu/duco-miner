@@ -7,7 +7,7 @@ chmod +x start.sh && ./start.sh
 To update the ducominer
 chmod +x update.sh && ./update.sh
 
-This mining Software is good for
+This mining Software is good for:
 
 1. Mining on old Pc and Laptop.
 2. Mining on old Smart Phone with Root/Termux App Installed.
