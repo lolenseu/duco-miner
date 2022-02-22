@@ -1,3 +1,4 @@
+#!/bin/sh
 clear
 echo ""
 echo "------------------------"
@@ -7,4 +8,8 @@ echo "|         V1.0         |"
 echo "|                      |"
 echo "------------------------"
 echo ""
-python3 miner.py
+echo "Username:"
+read uservar
+echo $uservar > src/userinfo
+echo ""
+python3 src/miner.py
