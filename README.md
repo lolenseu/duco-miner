@@ -12,10 +12,10 @@ Update:
 
 # How To use
 To use the ducominer
-chmod +x start.sh && ./start.sh
+```chmod +x start.sh && ./start.sh```
 
 To update the ducominer
-''''chmod +x update.sh && ./update.sh''''
+```chmod +x update.sh && ./update.sh```
 
 # Tips 
 This mining Software is good for:
