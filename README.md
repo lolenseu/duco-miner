@@ -3,11 +3,11 @@ Lightweight Software for Mining Duco (DuinoCoin). This miner works for one core 
 
 # Update and Bug Fixed
 Fixed: \
--Username loop.
+-Username loop. \
 -Connection Error.
 
 Update: \
--Updater File.
+-Updater File. \
 -Username Settings/userinfo.
 
 # How To use
