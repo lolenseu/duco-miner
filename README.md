@@ -40,5 +40,3 @@ We recommend to mine at least 5 to 4 Devices on this software because it can tak
 The official code miner.py own by alberiolima on https://github.com/alberiolima/MineCryptoOnWifiRouter
 
 Modified by lolenseu on https://github.com/lolenseu/DucoMiner
-
-Credits to https://github.com/alberiolima/MineCryptoOnWifiRouter
