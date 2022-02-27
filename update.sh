@@ -8,3 +8,4 @@ git clone https://github.com/lolenseu/DucoMiner.git
 cd DucoMiner
 chmod +x start.sh
 chmod +x update.sh
+clear
