@@ -2,13 +2,13 @@
 Lightweight Software for Mining Duco (DuinoCoin). This miner works for one core cpu and energy efficient for lightweight computers and devices.
 
 # Update and Bug Fixed
-Fixed: \
-- Username loop. \
+Fixed:
+- Username loop.
 - Connection Error.
 
-Update: \
--Updater File. \
--Username Settings/userinfo.
+Update:
+- Updater File.
+- Username Settings/userinfo.
 
 # How To use
 To use the ducominer \
