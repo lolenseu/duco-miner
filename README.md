@@ -16,11 +16,14 @@ Update:
 - Username Settings/userinfo.
 
 # How To use
-To use the ducominer \
-```chmod +x start.sh && ./start.sh```
-
-To update the ducominer \
-```chmod +x update.sh && ./update.sh```
+To use the ducominer
+```BASHc
+chmod +x start.sh && ./start.sh
+```
+To update the ducominer 
+```BASH
+chmod +x update.sh && ./update.sh
+```
 
 # Tips 
 This mining Software is good for:
