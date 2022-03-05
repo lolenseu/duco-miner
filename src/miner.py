@@ -22,15 +22,18 @@ with open("src/userinfo") as userinfo:
             try:
                 serverip = ("https://server.duinocoin.com/getPool")
                 poolinfo = json.loads(urllib.request.urlopen(serverip).read())
-                global pooladdress, poolport
                 pooladdress = poolinfo['ip']
                 poolport = poolinfo['port']
+                poolserver = poolinfo['server']
+                poolname = poolinfo['name']
+                poolconnection = poolinfo['success']
                 getpool = True
             except:
                 print("Connetion Failed!, Retrying...")
                 time.sleep(2.3)
                 continue
 
+                
     getserverip()
     while True:
         try:
@@ -39,12 +42,14 @@ with open("src/userinfo") as userinfo:
 
             print("")
             print("------------------------")
-            print("IP: ", pooladdress)
+            print("Server Name:", poolname)
+            print("IP:", pooladdress)
             print("Port:", poolport)
             print("Server Version", serverversion)
             print("------------------------")
             print("")
-            print("Connected!")
+            if poolconnection == True:
+                print("Connected!")
             print("Start Mining...")
             print("")
 
