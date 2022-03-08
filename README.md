@@ -8,12 +8,11 @@ Lightweight Software for Mining Duco (DuinoCoin). This miner works for one core 
 
 # Update and Bug Fixed
 Fixed:
-- Username loop.
-- Connection Error.
+- None
 
 Update:
-- Updater File.
-- Username Settings/userinfo.
+- monitor.py for terminal monitoring.
+
 
 # How To use
 To use the ducominer
