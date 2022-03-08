@@ -11,7 +11,7 @@ Fixed:
 - None
 
 Update:
-- monitor.py for terminal monitoring.
+- add monitor.py for terminal monitoring.
 
 
 # How To use
