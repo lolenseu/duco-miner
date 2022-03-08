@@ -1,7 +1,7 @@
 
-<a href="https://github.com/chainski/File-Hash-Generator"><img src="https://img.shields.io/badge/license-MIT License-orange"></a> 
-<a href="https://github.com/chainski/File-Hash-Generator"><img src="https://img.shields.io/badge/OPEN--SOURCE-YES-green"></a>
-<a href="https://github.com/chainski/File-Hash-Generator/releases"><img src="https://img.shields.io/github/v/release/lolenseu/DucoMiner"></a> 
+<a href="https://github.com/lolenseu/DucoMiner"><img src="https://img.shields.io/badge/license-MIT License-orange"></a> 
+<a href="https://github.com/lolenseu/DucoMiner"><img src="https://img.shields.io/badge/OPEN--SOURCE-YES-green"></a>
+<a href="https://github.com/lolenseu/DucoMiner/releases"><img src="https://img.shields.io/github/v/release/lolenseu/DucoMiner"></a> 
 
 # DucoMiner
 Lightweight Software for Mining Duco (DuinoCoin). This miner works for one core cpu and energy efficient for lightweight computers and devices.
