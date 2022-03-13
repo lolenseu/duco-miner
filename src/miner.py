@@ -63,7 +63,7 @@ def getserverip():
         os.execl(sys.executable, sys.executable, *sys.argv)
 
 processes = []
-for x in range(thread):
+for x in range(int(thread)):
     p = multiprocessing.Process(target=getserverip)
     if __name__ == '__main__':
         p.start()
