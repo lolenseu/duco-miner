@@ -39,41 +39,41 @@ def getserverip():
             continue
             
     while True:
-    try:
-        soc.connect((str(51.158.182.90), int(9779)))
-        soc.recv(3).decode()
-        print("")
-        print("Connected!")
-        print("Start Mining...")
-        print("")
+        try:
+            soc.connect((str(51.158.182.90), int(9779)))
+            soc.recv(3).decode()
+            print("")
+            print("Connected!")
+            print("Start Mining...")
+            print("")
 
-        while True:
-            soc.send(bytes("JOB," + username + ",LOW", encoding="utf8"))
-            work = soc.recv(1024).decode().rstrip("\n")
-            work = work.split(",")
-            diff = work[2]
-            start = time.time()
-            mainhash = hashlib.sha1(str(work[0]).encode('ascii'))
-            temphash = None
+            while True:
+                soc.send(bytes("JOB," + username + ",LOW", encoding="utf8"))
+                work = soc.recv(1024).decode().rstrip("\n")
+                work = work.split(",")
+                diff = work[2]
+                start = time.time()
+                mainhash = hashlib.sha1(str(work[0]).encode('ascii'))
+                temphash = None
 
-            for result in range(100 * int(diff) + 1):
-                temphash = mainhash.copy()
-                temphash.update(str(result).encode('ascii'))
-                duco = temphash.hexdigest()
+                for result in range(100 * int(diff) + 1):
+                    temphash = mainhash.copy()
+                    temphash.update(str(result).encode('ascii'))
+                    duco = temphash.hexdigest()
 
-                if work[1] == duco:
-                    stop = time.time()
-                    timediff = stop - start
-                    hashr = result / timediff
-                    soc.send(bytes(str(result) + "," + str(hashr) + ",DucoMiner " + "1.1", encoding="utf8"))
-                    feedback = soc.recv(1024).decode().rstrip("\n")
+                    if work[1] == duco:
+                        stop = time.time()
+                        timediff = stop - start
+                        hashr = result / timediff
+                        soc.send(bytes(str(result) + "," + str(hashr) + ",DucoMiner " + "1.1", encoding="utf8"))
+                        feedback = soc.recv(1024).decode().rstrip("\n")
 
-                    if feedback == "GOOD":
-                        print(f"[{datetime.today()}] Share, {result}, Difficulty, {diff}, Hashrate, {int(hashr/1000)}kH/s (Accepted!)")
-                        break
-                    elif feedback == "BAD":
-                        print(f"[{datetime.today()}] Share, {result}, Difficulty, {diff}, Hashrate, {int(hashr/1000)}kH/s (Rejected!)")
-                        break
+                        if feedback == "GOOD":
+                            print(f"[{datetime.today()}] Share, {result}, Difficulty, {diff}, Hashrate, {int(hashr/1000)}kH/s (Accepted!)")
+                            break
+                        elif feedback == "BAD":
+                            print(f"[{datetime.today()}] Share, {result}, Difficulty, {diff}, Hashrate, {int(hashr/1000)}kH/s (Rejected!)")
+                            break
 
     except Exception as e:
         print("")
