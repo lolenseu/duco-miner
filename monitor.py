@@ -27,21 +27,17 @@ def main():
         #print(read2)
 
         #apimapping
-        result = read['result']
-        tempbalance = result['balance']
-        mainbalance = tempbalance['balance']
+        tempbalance = read['result']['balance']
+        mainbalance = tempbalance
         mainuser = tempbalance['username']
         stake = tempbalance['stake_amount']
-        miners = result['miners']
-        result2 = read2['data']
-        daily_income = result2['daily_2m']
+        miners = tempbalance['miners']
+        daily_income = read2['data']['daily_2m']
         # DEBUG: for debuging (remove the hashtag to sea the results)
-        #print(result)
         #print(tempbalance)
         #print(mainbalance)
         #print(stake)
         #print(miners)
-        #print(result2)
         #print(daily_income)
 
         print("")
