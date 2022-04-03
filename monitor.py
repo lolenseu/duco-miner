@@ -27,11 +27,10 @@ def main():
         #print(read2)
 
         #apimapping
-        tempbalance = read['result']['balance']
-        mainbalance = tempbalance
-        mainuser = tempbalance['username']
-        stake = tempbalance['stake_amount']
-        miners = tempbalance['miners']
+        mainbalance = read['result']['balance']['balance']
+        mainuser = read['result']['balance']['username']
+        stake = read['result']['balance']['stake_amount']
+        miners = read['result']['miners']
         daily_income = read2['data']['daily_2m']
         # DEBUG: for debuging (remove the hashtag to sea the results)
         #print(tempbalance)
@@ -68,7 +67,7 @@ def main():
         elif minerlist == 50:
             print("Sorry we can't show your miners")
         else:
-            for maindata in result['miners']:
+            for maindata in read['result']['miners']:
               data = maindata['software'], maindata['identifier'], maindata['algorithm'], maindata['hashrate'], maindata['diff'], maindata['accepted'], maindata['rejected'], maindata['pool']
               minername, a, b, c, d, e, f, g = data
               print("Miner no." + str(x))
