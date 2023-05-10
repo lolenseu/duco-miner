@@ -42,7 +42,7 @@ with open("src/key") as key:
     while True:
         try:
             soc.connect((str(pooladdress), int(poolport)))
-            serverversion = soc.recv(3).decode()
+            serverversion = soc.recv(100).decode()
 
             print("")
             print("------------------------")
