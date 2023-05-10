@@ -8,7 +8,7 @@ Lightweight Software for Mining Duco (DuinoCoin). This miner works for one core 
 
 # Update and Bug Fixed
 Fixed:
-- None
+- getting server info
 
 Update:
 - add monitor.py for terminal monitoring.
