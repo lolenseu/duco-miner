@@ -24,8 +24,8 @@ with open("src/userinfo") as userinfo:
                 serverip = ("https://server.duinocoin.com/getPool")
                 poolinfo = json.loads(urllib.request.urlopen(serverip).read())
                 global pooladdress, poolport, poolserver, poolname, poolconnection
-                pooladdress = "51.158.182.90" #poolinfo['ip']
-                poolport = 9779 #poolinfo['port']
+                pooladdress = poolinfo['ip']
+                poolport = poolinfo['port']
                 poolserver = poolinfo['server']
                 poolname = poolinfo['name']
                 poolconnection = poolinfo['success']
