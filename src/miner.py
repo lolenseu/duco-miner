@@ -15,6 +15,8 @@ soc.settimeout(10)
 
 with open("src/userinfo") as userinfo:
     username = userinfo.read().rstrip()
+with open("src/key") as key:
+    key = key.read().rstrip()
 
     def getserverip():
         print("Connecting to the Pool IP Address and Port!")
@@ -55,7 +57,7 @@ with open("src/userinfo") as userinfo:
             print("")
 
             while True:
-                soc.send(bytes("JOB," + username + ",LOW", encoding="utf8"))
+                soc.send(bytes("JOB," + str(username) + ",LOW," + str(key), encoding="utf8"))
                 work = soc.recv(1024).decode().rstrip("\n")
                 work = work.split(",")
                 diff = work[2]
