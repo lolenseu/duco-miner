@@ -17,9 +17,7 @@ def main():
         # 'https://server.duinocoin.com/users/ + username'
         # 'https://duco.sytes.net/api/rewards.php/" + username'
         api = "https://server.duinocoin.com/users/" + username
-        api2 = "https://duco.sytes.net/api/rewards.php/" + username
         read = json.loads(urlopen(api).read())
-        read2 = json.loads(urlopen(api2).read())
         # DEBUG: for debuging (remove the hashtag to sea the results)
         #print(api)
         #print(read)
@@ -31,7 +29,6 @@ def main():
         mainuser = read['result']['balance']['username']
         stake = read['result']['balance']['stake_amount']
         miners = read['result']['miners']
-        daily_income = read2['data']['daily_2m']
         # DEBUG: for debuging (remove the hashtag to sea the results)
         #print(tempbalance)
         #print(mainbalance)
@@ -46,7 +43,6 @@ def main():
 
         #userinfo (profile)
         print("Username: " + str(mainuser))
-        print("Estimated Daily Income: " + str(daily_income))
         print("Total Balance: " + str(mainbalance))
         print("Stakes: " + str(stake))
 
@@ -64,7 +60,7 @@ def main():
         x = 1
         if minerlist == 0:
             print("No Miners Active")
-        elif minerlist == 50:
+        elif minerlist > 50:
             print("Sorry we can't show your miners")
         else:
             for maindata in read['result']['miners']:
